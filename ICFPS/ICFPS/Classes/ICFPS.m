@@ -37,7 +37,7 @@
         vc.view.frame = CGRectMake(0,0 , 140, 40);
         ICFPSLabel *fpsLabel = [ICFPSLabel new];
         [fpsLabel sizeToFit];
-        fpsLabel.frame = CGRectMake(1024 - 250, 1, 140, 18);
+        fpsLabel.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 250, 1, 140, 18);
         [vc.view addSubview:fpsLabel];
         ICFPSWindow *window = [[ICFPSWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
         window.rootViewController = vc;
